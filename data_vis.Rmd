@@ -48,3 +48,21 @@ annual_esc <- esc %>%
 head(annual_esc)
 ```
 
+## Plotting
+
+```{r}
+ggplot(annual_esc, mapping = aes(x = Species, y = totalCount, fill = SASAP.Region))+geom_col()
+```
+
+
+```{r}
+annual_esc %>%
+  filter(SASAP.Region == "Kodiak") %>%
+  ggplot(aes(x = year, y = totalCount, color = Species)) +
+  geom_line() +
+  geom_point()
+```
+```{r}
+
+```
+
