@@ -36,5 +36,25 @@ celsius5 <- fahr_to_celsius(airtemps[1])
 celsius1 == celsius5
 ```
 
+```{r}
+celsius <- fahr_to_celsius(airtemps)
+celsius
+```
 
-# Codument our function
+
+
+# Document our function
+
+# Celsius to Fahrenheit
+```{r}
+celsius_to_fahr <- function(celsius){
+  fahr <- celsius*9/5 + 32
+  return(fahr)
+}
+```
+
+```{r}
+fahr <- celsius_to_fahr(celsius)
+fahr
+```
+
